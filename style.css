@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #523999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: #589589;
+    height: 80%;
+    width: 80%;
+}
+
+.row {
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    height: 25vh;
+    width: 1fr;
+    margin: 2em;
+    display: grid;
+}
+
+.circlebox {
+    padding: 8px 4px;
+    border-left: 1px solid #000;
+    display: grid;
+    /* revisar como se comporta con 2 circulos en el box */
+    place-items: center;
+}
+
+#circle {
+    height: 7vw;
+    width: 7vw;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+}
+
