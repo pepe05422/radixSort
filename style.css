@@ -1,86 +1,100 @@
 /** Configuraciones para todos los elementos del DOM reseteados para evitar conflictos con los navegadores **/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    user-select: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
 }
 
 /* Pantalla unica de la página que abarca el total de la pantalla */
 .body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #523999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #077187;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* el contenedor principal centrado en la pantalla */
 .main {
-    background-color: #589589;
-    height: 80vh;
-    width: 80vw;
+  background-color: #74a57f;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2em 0;
 }
 
 /* Contenedor de las lineas donde sucedera la animacion */
 .animator {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-around;
 }
 
+/* ## Recordar que puedes usar variables de CSS para modificar las columnas del grid template ## */
 .row {
-    grid-template-columns: repeat(4, 1fr);
-    height: 25vh;
-    width: 1fr;
-    margin: 2em;
-    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 45%;
+  width: 1fr;
+  display: grid;
 }
+
 .row .circlebox:first-child {
-    border: 0;
+  border: 0;
 }
 
 .CircleBox {
-    display: unset;
+  display: unset;
 }
+
 .circlebox {
-    padding: 8px 4px;
-    border-left: 1px solid #000;
-    display: grid;
-    /* revisar como se comporta con 2 circulos en el box */
-    align-items: flex-end;
-    justify-content: center;
+  padding: 8px 4px;
+  border-left: 1px solid #594231;
+  display: grid;
+  /* revisar como se comporta con 2 circulos en el box */
+  align-items: flex-end;
+  justify-content: center;
 }
 
 #circle {
-    height: 7vw;
-    width: 7vw;
-    background-color: #bbbbbb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 7vw;
+  width: 7vw;
+  max-width: 60px;
+  max-height: 60px;
+  background-color: #e4c5af;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Contenedor de los botones */
 .buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .btn {
-    width: 10vw;
-    height: 6vh;
-    background-color: #aaa111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    cursor: pointer;
-    
+  width: 10vw;
+  height: 6vh;
+  background-color: #a5749a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #ddd222;
+  margin-top: 0.5vh;
+  background-color: #694a61;
+  width: 9vw;
+  height: 5vh;
 }
